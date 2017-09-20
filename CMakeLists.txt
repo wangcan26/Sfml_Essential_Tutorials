@@ -21,3 +21,4 @@ endif()
 
 add_subdirectory(1.HelloSFML)
 add_subdirectory(2.RenderWindow)
+add_subdirectory(3.RenderShapes)
