@@ -4,6 +4,7 @@ set(SOURCE_FILES main.cc)
 
 add_executable(RenderWindow ${SOURCE_FILES})
 
+ConfigureTarget(RenderWindow)
 
 if(SFML_LIBRARIES)
 	target_link_libraries(RenderWindow ${SFML_LIBRARIES})	

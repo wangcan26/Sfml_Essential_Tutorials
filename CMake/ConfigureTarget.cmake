@@ -1,0 +1,10 @@
+
+macro(ConfigureTarget TARGET_NAME)
+
+set_target_properties(${TARGET_NAME} PROPERTIES
+    ARCHIVE_OUTPUT_DIRECTORY "${SFML_BUILD_OUTPUT}/lib"
+    LIBRARY_OUTPUT_DIRECTORY "${SFML_BUILD_OUTPUT}/lib"
+    RUNTIME_OUTPUT_DIRECTORY "${SFML_BUILD_OUTPUT}/bin"
+  )
+
+endmacro(ConfigureTarget TARGET_NAME)

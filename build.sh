@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd build
-cmake -G "CodeLite - Unix Makefiles" ..
+cmake  -DCMAKE_INSTALL_PREFIX="./output" -G "CodeLite - Unix Makefiles" ..

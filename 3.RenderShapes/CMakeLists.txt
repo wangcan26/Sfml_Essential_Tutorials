@@ -5,6 +5,8 @@ set(SOURCE_FILES main.cc)
 add_executable(RenderShapes ${SOURCE_FILES})
 
 
+ConfigureTarget(RenderShapes)
+
 if(SFML_LIBRARIES)
 	target_link_libraries(RenderShapes ${SFML_LIBRARIES})	
 endif()
