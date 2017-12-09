@@ -1,5 +1,6 @@
 //AnimateSprite demo
 #include <SFML/Graphics.hpp>
+#include "AssetManager.h"
 
 int main()
 {
@@ -7,7 +8,7 @@ int main()
 
 	//Setup
 	sf::Vector2i spriteSize(32, 32);
-	sf::Sprite sprite()
+	sf::Sprite sprite(AssetManager::GetTexture("../Assets/Textures/smoke.png"));
 
 	while(window.isOpen())
 	{

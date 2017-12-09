@@ -11,3 +11,7 @@ set_target_properties(AnimateSprite PROPERTIES
 if(SFML_LIBRARIES)
 	target_link_libraries(AnimateSprite ${SFML_LIBRARIES})
 endif()
+
+if(SFML_TUTORIA_COMMON_LIBRARY)
+  target_link_libraries(AnimateSprite ${SFML_TUTORIA_COMMON_LIBRARY})
+endif()
